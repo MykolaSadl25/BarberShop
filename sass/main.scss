@@ -1,5 +1,12 @@
 @import "./base/reset";
-@import "./base/common";
 @import "./base/container";
+@import "./base/common";
 @import "./base/variables";
-@import "./sections/header"
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/about";
+@import "./sections/prices";
+@import "./sections/features";
+@import "./sections/team";
+@import "./sections/gallery";
+@import "./sections/footer";

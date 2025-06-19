@@ -1,0 +1,100 @@
+.header {
+  background-color: grey;
+  padding-top: 40px;
+  
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: none;
+    @media screen and (min-width: 720px) {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+    @media screen and (min-width: 1200px) {
+      gap: 30px;
+    }
+  }
+  &__link{
+    color: #FFF;
+font-family: "Open Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.2px;
+&:hover,&:focus{
+    color: #FF6C00;
+}
+  }
+  &__items {
+    display: none;
+    @media screen and (min-width: 720px) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: end;
+    }
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+
+&__elem:first-child{
+    @media screen and (min-width: 1200px) {
+        order: 1;
+        
+    }
+}
+
+  &__contact{
+    color: #FFF;
+font-family: "Open Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.08px;
+text-transform: uppercase;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: 720px) {
+      display: none;
+    }
+  }
+  &__logo {
+    width: 68.93px;
+    height: 55.46px;
+  }
+
+  &__burger {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.button{
+border-radius: 25px;
+border: 1px solid #FF6C00;
+// padding: 12px 20px;
+width: 160px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
