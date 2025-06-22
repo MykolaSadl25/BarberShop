@@ -42,9 +42,32 @@
             </ul>
             </div>
             <div class="header__wrap">
-                <a class="header__logo" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
-            <button class="header__burger" type="button"><img src="./img/burger.png" alt="burger"></button>
+                <a class="header__logo" href="./index.html"><svg class="header__logo">
+                    <use href="./img/symbol-defs.svg#icon-Logo"></use>
+                </svg></a>
+            <button class="header__burger" type="button" ><svg class="header__burger"data-mobile-open>
+                <use href="./img/symbol-defs.svg#icon-burger"></use>
+            </svg></button>
             </div>
+            <!-- <div class="mobile is-hidden" data-mobile>
+                <button class="mobile__close" type="button"><svg class="mobile__icon" data-mobile-close>
+                    <use href="./img/symbol-defs.svg#icon-cross"></use>
+                </svg></button>
+                <ul class="mobile__list">
+                    <li class="mobile__item"><a href="#" class="mobile__link">About</a></li>
+                    <li class="mobile__item"><a href="#" class="mobile__link">Services and prices</a></li>
+                    <li class="mobile__item"><a href="#" class="mobile__link">Barbers</a></li>
+                    <li class="mobile__item"><a href="#" class="mobile__link">Contacts</a></li>
+                </ul>
+                <ul class="mobile__items">
+                    <li class="mobile__elem"><a href="#" class="mobile__contact">+38 044 111 11 11</a></li>
+                    <li class="mobile__elem"><a href="tel:+380441111111" class="mobile__contact button">Online-booking</a></li>
+                </ul>
+                <ul class="mobile__elems">
+                    <li class="mobile__itm"><a class="mobile__social" href="https://www.instagram.com/">Instagram</a></li>
+                    <li class="mobile__itm"><a class="mobile__social" href="https://www.youtube.com/ ">Youtube</a></li>
+                </ul>
+            </div> -->
         </div>
     </header>
     <main>
@@ -53,85 +76,98 @@
                 <p class="hero__desc">A hair salon for men in Kyiv</p>
             <h1 class="hero__title">BarberShop</h1>
             <p class="hero__subtitle">We are experts in trendy men’s haircuts.We work quickly, carefully and with style.</p>
+            <button class="hero__nav" type="button"><img src="./img/nav.png" alt="nav"></button>
+            <ul class="hero__list">
+                <li class="hero__item"><a class="hero__link" href="#">Back</a></li>
+                <li class="hero__item"><a class="hero__link" href="#">Forward</a></li>
+            </ul>
             </div>
         </section>
         <section class="about">
-            <div class="container">
-                <img class="about__image" src="#" alt="">
-            <img class="about__image" src="#" alt="">
-            <p class="about__desc">About</p>
-            <h2 class="about_title">Best Barbershop in your city</h2>
+            <div class="container about__wrap">
+            <div class="about__images">
+                <img class="about__image" src="./img/beard-trim.jpg" alt="Beard trim">
+            <img class="about__image" src="./img/haircut.jpg" alt="Haircut">
+            </div>
+            <div class="about__description">
+                <p class="about__desc">About</p>
+            <h2 class="about__title">Best Barbershop in your city</h2>
             <p class="about__subtitle">If you want to add more confidence to your image, you should definitely visit us.</p>
             <p class="about__text">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
             <button class="about__btn" type="button">ONLINE-BOOKING</button>
+            </div>
             </div>
         </section>
         <section class="prices">
             <div class="container">
                 <p class="prices__desc">Spend your time with the best masters</p>
             <h2 class="prices__title">Services and prices</h2>
-            <ul class="prices__list">
+            <div class="prices__box">
+                <ul class="prices__list">
                 <li class="prices__item">
-                    <h2 class="prices__title">Men’s haircut</h2>
+                    <h2 class="prices__heading">Men’s haircut</h2>
                     <p class="prices__text">from 300 uah.</p>
                 </li>
                 <li class="prices__item">
-                    <h2 class="prices__title">Beard trim</h2>
+                    <h2 class="prices__heading">Beard trim</h2>
                     <p class="prices__text">from 300 uah.</p>
                 </li>
                 <li class="prices__item">
-                    <h2 class="prices__title">Mustache trim</h2>
+                    <h2 class="prices__heading">Mustache trim</h2>
                     <p class="prices__text">from 200 uah.</p>
                 </li>
                 <li class="prices__item">
-                    <h2 class="prices__title">Straight razor shave</h2>
+                    <h2 class="prices__heading">Straight razor shave</h2>
                     <p class="prices__text">from 200 uah.</p>
                 </li>
             </ul>
             <ul class="prices__items">
                 <li class="prices__elem">
-                    <h2 class="prices__title">Men’s haircut</h2>
-                    <p class="prices__text">from 300 uah.</p>
+                    <h2 class="prices__heading">Trainee’s haircut</h2>
+                    <p class="prices__text">from 50 uah.</p>
                 </li>
                 <li class="prices__elem">
-                    <h2 class="prices__title">Beard trim</h2>
-                    <p class="prices__text">from 300 uah.</p>
-                </li>
-                <li class="prices__elem">
-                    <h2 class="prices__title">Mustache trim</h2>
+                    <h2 class="prices__heading">Haircut under the nozzle</h2>
                     <p class="prices__text">from 200 uah.</p>
                 </li>
                 <li class="prices__elem">
-                    <h2 class="prices__title">Straight razor shave</h2>
+                    <h2 class="prices__heading">Children’s haircut (0-12 y.o.)</h2>
+                    <p class="prices__text">from 300 uah.</p>
+                </li>
+                <li class="prices__elem">
+                    <h2 class="prices__heading">Camouflage of gray hair</h2>
                     <p class="prices__text">from 200 uah.</p>
                 </li>
             </ul>
-            <button class="prices__btn">online-booking</button>
+            </div>
+            <div class="prices__wrap"><button class="prices__btn button">online-booking</button></div>
             </div>
         </section>
         <section class="features">
             <div class="container">
-                <p class="features__desc">Old traditional school</p>
+                <div class="features__box"><p class="features__desc">Old traditional school</p>
             <h2 class="features__title">¿Why people come to us?</h2>
-            <p class="features__subtitle">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
+            <p class="features__subtitle">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p></div>
+            <div class="features__stats">
             <ul class="features__list">
                 <li class="features__item">
-                    <h2 class="features__heading">600</h2>
-                    <p class="features__desc">Satisfied customers per day</p>
+                    <h2 class="features__heading">600<span class="features__plus">+</span></h2>
+                    <p class="features__text">Satisfied customers per day</p>
                 </li>
                 <li class="features__item">
-                    <h2 class="features__heading">50</h2>
-                    <p class="features__desc">Awards for excellent service</p>
+                    <h2 class="features__heading">50<span class="features__plus">+</span></h2>
+                    <p class="features__text">Awards for excellent service</p>
                 </li>
                 <li class="features__item">
-                    <h2 class="features__heading">20</h2>
-                    <p class="features__desc">Kyiv’s best barbers</p>
+                    <h2 class="features__heading">20<span class="features__plus">+</span></h2>
+                    <p class="features__text">Kyiv’s best barbers</p>
                 </li>
                 <li class="features__item">
-                    <h2 class="features__heading">100</h2>
-                    <p class="features__desc">Gifts for regular customers</p>
+                    <h2 class="features__heading">100<span class="features__plus">+</span></h2>
+                    <p class="features__text">Gifts for regular customers</p>
                 </li>
             </ul>
+        </div>
             </div>
         </section>
         <section class="team">
@@ -140,105 +176,105 @@
             <h2 class="team__title">Our barbers</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img class="team__image" src="#" alt="">
+                    <img class="team__image" src="./img/john.jpg" alt="John Smith">
                     <h2 class="team__name">John Smith</h2>
                     <p class="team__text">Extreme Barber</p>
                     <ul class="team__items">
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://www.instagram.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://x.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://www.facebook.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://gb.linkedin.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img class="team__image" src="#" alt="">
+                    <img class="team__image" src="./img/michele.jpg" alt="Michele Doe">
                     <h2 class="team__name">Michele Doe</h2>
                     <p class="team__text">Extreme Barber</p>
                     <ul class="team__items">
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://www.instagram.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://x.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://www.facebook.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://gb.linkedin.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img class="team__image" src="#" alt="">
+                    <img class="team__image" src="./img/alan.jpg" alt="Alan Black">
                     <h2 class="team__name">Alan Black</h2>
                     <p class="team__text">Extreme Barber</p>
                     <ul class="team__items">
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://www.instagram.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://x.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://www.facebook.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="team__elem">
-                            <a href="#" class="team__social">
+                            <a href="https://gb.linkedin.com/" class="team__social">
                                 <svg class="team__icon">
-                                    <use href="#"></use>
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>
@@ -294,6 +330,7 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script>
       AOS.init();
     </script>
