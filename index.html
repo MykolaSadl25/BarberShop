@@ -73,10 +73,14 @@
     <main>
         <section class="hero">
             <div class="container">
-                <p class="hero__desc">A hair salon for men in Kyiv</p>
+                <div class="hero__wrap">
+                <div class="hero__box">
+                    <p class="hero__desc">A hair salon for men in Kyiv</p>
             <h1 class="hero__title">BarberShop</h1>
             <p class="hero__subtitle">We are experts in trendy men’s haircuts.We work quickly, carefully and with style.</p>
+                </div>
             <button class="hero__nav" type="button"><img src="./img/nav.png" alt="nav"></button>
+        </div>
             <ul class="hero__list">
                 <li class="hero__item"><a class="hero__link" href="#">Back</a></li>
                 <li class="hero__item"><a class="hero__link" href="#">Forward</a></li>
@@ -172,13 +176,17 @@
         </section>
         <section class="team">
             <div class="container">
-                <p class="team__desc">For true enjoyers of the atmosphere</p>
+                <div class="team__heading">
+                    <p class="team__desc">For true enjoyers of the atmosphere</p>
             <h2 class="team__title">Our barbers</h2>
+                </div>
             <ul class="team__list">
                 <li class="team__item">
                     <img class="team__image" src="./img/john.jpg" alt="John Smith">
-                    <h2 class="team__name">John Smith</h2>
+                    <div class="team__description">
+                        <h2 class="team__name">John Smith</h2>
                     <p class="team__text">Extreme Barber</p>
+                    </div>
                     <ul class="team__items">
                         <li class="team__elem">
                             <a href="https://www.instagram.com/" class="team__social">
@@ -212,8 +220,10 @@
                 </li>
                 <li class="team__item">
                     <img class="team__image" src="./img/michele.jpg" alt="Michele Doe">
-                    <h2 class="team__name">Michele Doe</h2>
+                    <div class="team__description">
+                        <h2 class="team__name">Michele Doe</h2>
                     <p class="team__text">Extreme Barber</p>
+                    </div>
                     <ul class="team__items">
                         <li class="team__elem">
                             <a href="https://www.instagram.com/" class="team__social">
@@ -247,8 +257,10 @@
                 </li>
                 <li class="team__item">
                     <img class="team__image" src="./img/alan.jpg" alt="Alan Black">
-                    <h2 class="team__name">Alan Black</h2>
+                    <div class="team__description">
+                        <h2 class="team__name">Alan Black</h2>
                     <p class="team__text">Extreme Barber</p>
+                    </div>
                     <ul class="team__items">
                         <li class="team__elem">
                             <a href="https://www.instagram.com/" class="team__social">
@@ -285,11 +297,12 @@
         </section>
         <section class="gallery">
             <div class="container">
+                <p class="gallery__desc">In Latin, "barba" means "beard"</p>
                 <ul class="gallery__list">
-                <li class="gallery__item"><img src="#" alt="" class="gallery__image"></li>
-                <li class="gallery__item"><img src="#" alt="" class="gallery__image"></li>
-                <li class="gallery__item"><img src="#" alt="" class="gallery__image"></li>
-                <li class="gallery__item"><img src="#" alt="" class="gallery__image"></li>
+                <li class="gallery__item"><img src="./img/pro-haircut.jpg" alt="" class="gallery__image"></li>
+                <li class="gallery__item"><img src="./img/pro-beard.jpg" alt="" class="gallery__image"></li>
+                <li class="gallery__item"><img src="./img/man.jpg" alt="" class="gallery__image"></li>
+                <li class="gallery__item"><img src="./img/hands.jpg" alt="" class="gallery__image"></li>
             </ul>
             </div>
         </section>

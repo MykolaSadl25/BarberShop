@@ -1,0 +1,118 @@
+.team {
+  padding-top: 84px;
+  @media screen and (min-width: 720px) {
+    padding-top: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+  }
+
+  &__desc {
+    color: $desc-color2;
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 1px;
+      background-color: $desc-color2;
+    }
+  }
+
+  &__title {
+    color: $title-color2;
+    font-family: "Raleway";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    margin-bottom: 44px;
+  }
+
+  &__image {
+    width: 418px;
+    height: 346px;
+    @media screen and (min-width: 720px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
+  }
+
+&__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      gap: 30px;
+    }
+}
+
+  &__item{
+    background: $team-item-bcg;
+  }
+
+  &__description{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__name{
+    color: $team-name-color;
+text-align: center;
+font-family: "Open Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.36px;
+  }
+
+  &__text{
+    color: $hover-color;
+text-align: center;
+font-family: "Open Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.28px;
+  }
+
+  &__items{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 64px;
+  }
+
+&__elem{
+    width: 44px;
+height: 44px;
+border-radius: 100%;
+background-color: $social-item-bcg;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+  &__icon{
+    width: 20px;
+height: 20px;
+fill: $team-icons-color;
+&:hover{
+    fill: $hover-color;
+}
+  }
+}
