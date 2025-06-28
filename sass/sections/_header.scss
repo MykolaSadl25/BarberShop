@@ -33,7 +33,9 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.2px;
-
+transition-property: color;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 250ms;
     &:hover,
     &:focus {
       color: #FF6C00;
@@ -105,13 +107,20 @@
 
 .button {
   border-radius: 25px;
-  border: 1px solid #FF6C00;
+  border: 1px solid $hover-color;
   // padding: 12px 20px;
   width: 160px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 250ms;
+}
+
+.button:hover{
+  background-color: $hover-color;
 }
 
 // MOBILE MENU

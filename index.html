@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BarberShop</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -73,6 +73,15 @@
     <main>
         <section class="hero">
             <div class="container">
+                <!-- <aside class="hero__aside">
+                <a class="hero__logo" href="./index.html"><svg class="hero__icon">
+                    <use href="./img/symbol-defs.svg#icon-Logo"></use>
+                </svg></a>
+                <ul class="hero__items">
+                    <li class="hero__elem"><a href="https://www.instagram.com/" class="hero__social">Instagram</a></li>
+                    <li class="hero__elem"><a href="https://www.youtube.com/" class="hero__social">Youtube</a></li>
+                </ul>
+            </aside> -->
                 <div class="hero__wrap">
                 <div class="hero__box">
                     <p class="hero__desc">A hair salon for men in Kyiv</p>
@@ -102,53 +111,58 @@
             </div>
             </div>
         </section>
-        <section class="prices">
-            <div class="container">
-                <p class="prices__desc">Spend your time with the best masters</p>
-            <h2 class="prices__title">Services and prices</h2>
-            <div class="prices__box">
-                <ul class="prices__list">
-                <li class="prices__item">
-                    <h2 class="prices__heading">Men’s haircut</h2>
-                    <p class="prices__text">from 300 uah.</p>
-                </li>
-                <li class="prices__item">
-                    <h2 class="prices__heading">Beard trim</h2>
-                    <p class="prices__text">from 300 uah.</p>
-                </li>
-                <li class="prices__item">
-                    <h2 class="prices__heading">Mustache trim</h2>
-                    <p class="prices__text">from 200 uah.</p>
-                </li>
-                <li class="prices__item">
-                    <h2 class="prices__heading">Straight razor shave</h2>
-                    <p class="prices__text">from 200 uah.</p>
-                </li>
-            </ul>
-            <ul class="prices__items">
-                <li class="prices__elem">
-                    <h2 class="prices__heading">Trainee’s haircut</h2>
-                    <p class="prices__text">from 50 uah.</p>
-                </li>
-                <li class="prices__elem">
-                    <h2 class="prices__heading">Haircut under the nozzle</h2>
-                    <p class="prices__text">from 200 uah.</p>
-                </li>
-                <li class="prices__elem">
-                    <h2 class="prices__heading">Children’s haircut (0-12 y.o.)</h2>
-                    <p class="prices__text">from 300 uah.</p>
-                </li>
-                <li class="prices__elem">
-                    <h2 class="prices__heading">Camouflage of gray hair</h2>
-                    <p class="prices__text">from 200 uah.</p>
-                </li>
-            </ul>
-            </div>
-            <div class="prices__wrap"><button class="prices__btn button">online-booking</button></div>
-            </div>
+         <section class="prices">
+        <div class="container">
+            <p class="prices__desc">Spend your time with the best masters</p>
+        <h2 class="prices__title">Services and prices</h2>
+        <ul class="prices__list">
+            <li class="prices__item">
+                <ul class="prices__elements">
+                    <li class="prices__elem">
+                        <h3 class="prices__heading">Men’s haircut</h3>
+                        <p class="prices__text">from 300 uah.</p>
+                    </li>
+                    <li class="prices__elem">
+                        <h3 class="prices__heading">Beard trim</h3>
+                        <p class="prices__text">from 300 uah.</p>
+                    </li>
+                    <li class="prices__elem">
+                        <h3 class="prices__heading">Mustache trim</h3>
+                        <p class="prices__text">from 200 uah.</p>
+                    </li>
+                    <li class="prices__elem">
+                        <h3 class="prices__heading">Straight razor shave</h3>
+                        <p class="prices__text">from 200 uah.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="prices__item">
+                <ul class="prices__elements">
+                    <li class="prices__elem">
+                        <h3 class="prices__heading">Trainee’s haircut</h3>
+                        <p class="prices__text">from 50 uah.</p>
+                    </li>
+                    <li class="prices__elem">
+                        <h3 class="prices__heading">Haircut under the nozzle</h3>
+                        <p class="prices__text">from 200 uah.</p>
+                    </li>
+                    <li class="prices__elem">
+                        <h3 class="prices__heading">Children’s haircut (0-12 y.o.)</h3>
+                        <p class="prices__text">from 300 uah.</p>
+                    </li>
+                    <li class="prices__elem">
+                        <h3 class="prices__heading">Camouflage of gray hair</h3>
+                        <p class="prices__text">from 200 uah.</p>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+        <button class="prices__btn button" type="button">online-booking</button>
+        </div>
         </section>
         <section class="features">
-            <div class="container">
+            <div class="container features__boxes">
                 <div class="features__box"><p class="features__desc">Old traditional school</p>
             <h2 class="features__title">¿Why people come to us?</h2>
             <p class="features__subtitle">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p></div>
@@ -299,46 +313,65 @@
             <div class="container">
                 <p class="gallery__desc">In Latin, "barba" means "beard"</p>
                 <ul class="gallery__list">
-                <li class="gallery__item"><img src="./img/pro-haircut.jpg" alt="" class="gallery__image"></li>
-                <li class="gallery__item"><img src="./img/pro-beard.jpg" alt="" class="gallery__image"></li>
-                <li class="gallery__item"><img src="./img/man.jpg" alt="" class="gallery__image"></li>
-                <li class="gallery__item"><img src="./img/hands.jpg" alt="" class="gallery__image"></li>
+                <li class="gallery__item"><img src="./img/pro-haircut.jpg" alt="pro-haircut" class="gallery__image"></li>
+                <li class="gallery__item"><img src="./img/pro-beard.jpg" alt="pro-beard" class="gallery__image"></li>
+                <li class="gallery__item"><img src="./img/man.jpg" alt="man" class="gallery__image"></li>
+                <li class="gallery__item"><img src="./img/hands.jpg" alt="hands" class="gallery__image"></li>
             </ul>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer__wrap">
+            <div class="footer__wraps">
+                <div class="footer__wrap">
             <form class="footer__form">
             <h2 class="footer__title">Online-booking</h2>
-            <label class="footer__label">Name*
-                <input required type="text">
+            <div class="footer__fwrap">
+                <label class="footer__label">
+                <input class="footer__input" required type="text"placeholder="Name*">
             </label>
-            <label class="footer__label">Phone*
-                <input required type="text">
+            <label class="footer__label">
+                <input class="footer__input" required type="text" placeholder="Phone*">
             </label>
-            <label class="footer__label">Message
-                <textarea class="footer__textarea"></textarea>
+            </div>
+            <label class="footer__label">
+                <textarea class="footer__textarea" placeholder="Message"></textarea>
             </label>
-            <button class="footer__btn" type="submit">Send</button>
+            <div class="footer__button"><button class="footer__btn button" type="submit">Send</button></div>
         </form>
         </div>
-        <div class="footer__box">
-            <h2 class="footer__heading">Contacts</h2>
-            <address class="footer__address"><svg class="footer__icon">
-                <use href=""></use>
-            </svg>st. Vasilkovaya, 7A Kiev, 08132</address>
+            <div class="footer__box">
+            <div class="footer__boxes">
+                <h2 class="footer__heading">Contacts</h2>
             <ul class="footer__list">
+                <li class="footer__item">
+                    <address class="footer__address"><svg class="footer__icon">
+                <use href="./img/symbol-defs.svg#icon-map"></use>
+            </svg>st. Vasilkovaya, 7A Kiev, 08132</address>
+                </li>
                 <li class="footer__item"><a href="tel:+380441111111" class="footer__contact"><svg class="footer__icon">
-                    <use></use>
+                    <use href="./img/symbol-defs.svg#icon-phone"></use>
                 </svg>+38 044 111 11 11</a></li>
-                <li class="footer__item"><a href="mailto:barbershop@email.com" class="footer__contact"><svg class="footer__icon">
-                    <use></use>
+                <li class="footer__item"><a href="mailto:barbershop@email.com" class="footer__mail"><svg class="footer__icon">
+                    <use href="./img/symbol-defs.svg#icon-envelop"></use>
                 </svg>barbershop@email.com</a></li>
             </ul>
-            <p class="footer__text">Working hours</p>
+            </div>
+            <div class="footer__texts">
+                <p class="footer__text">Working hours</p>
             <h2 class="footer__subtitle">Every day from 9:00 to 22:00</h2>
+            </div>
+        </div>
+            </div>
+        <div class="footer__copywrite">
+            <p class="footer__desc"><span>&copy;</span>Copyright 2020</p>
+            <div class="footer__wraping">
+                <ul class="footer__items">
+                <li class="footer__elem"><a class="footer__social" href="https://www.instagram.com/">Instagram</a></li>
+                <li class="footer__elem"><a class="footer__social" href="https://www.youtube.com/">Youtube</a></li>
+            </ul>
+            </div>
         </div>
         </div>
     </footer>

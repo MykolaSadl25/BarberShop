@@ -1,0 +1,50 @@
+.gallery {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 720px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  &__desc {
+    color: $desc-color2;
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 1px;
+      background-color: $desc-color2;
+    }
+  }
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__image {
+    width: 418px;
+    height: 360px;
+    @media screen and (min-width: 720px) {
+      width: 330px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+}

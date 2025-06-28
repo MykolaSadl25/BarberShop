@@ -10,6 +10,13 @@
     padding-bottom: 120px;
   }
 
+  &__boxes{
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    flex-direction: row-reverse;
+  }
+  }
+
   &__desc{
     color: $desc-color2;
 font-family: "Open Sans";
@@ -54,12 +61,27 @@ letter-spacing: 0.36px;
 margin-bottom: 44px;
   }
 
+  &__box{
+    @media screen and (min-width: 720px) {
+    display: flex;
+    flex-direction: column;
+  }
+  }
   &__list{
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
+    flex-wrap: wrap;
     @media screen and (min-width: 720px) {
     justify-content: flex-end;
+    display: grid;
+    grid-template-columns: repeat(2, auto);  // 2 колонки
+    row-gap: 30px;
+    column-gap: 50px;
+    justify-content: end;  // вирівнювання вправо
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
   }
   }
   &__item{

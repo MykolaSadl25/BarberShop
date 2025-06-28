@@ -111,6 +111,9 @@ align-items: center;
     width: 20px;
 height: 20px;
 fill: $team-icons-color;
+transition-property: fill;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 250ms;
 &:hover{
     fill: $hover-color;
 }
