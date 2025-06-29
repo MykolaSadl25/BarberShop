@@ -101,8 +101,16 @@
         <section class="about">
             <div class="container about__wrap">
             <div class="about__images">
+                <picture>
+                    <source srcset="./img/desktop/about-desktop-img1@1x.webp 1x, ./img/desktop/about-desktop-img1@2x.webp 2x" media="(min-width:1200px)">
+                    <source srcset="./img/tablet/about-tablet-img1@1x.webp 1x, ./img/tablet/about-tablet-img1@2x.webp 2x" media="(min-width:720px)">
                 <img class="about__image" src="./img/beard-trim.jpg" alt="Beard trim">
-            <img class="about__image" src="./img/haircut.jpg" alt="Haircut">
+                </picture>
+                <picture>
+                    <source srcset="./img/desktop/about-desktop-img2@1x.webp 1x, ./img/desktop/about-desktop-img2@2x.webp 2x" media="(min-width:1200px)">
+                    <source srcset="./img/tablet/about-tablet-img2@1x.webp 1x, ./img/tablet/about-tablet-img2@2x.webp 2x" media="(min-width:720px)">
+                <img class="about__image" src="./img/haircut.jpg" alt="Haircut">
+                </picture>
             </div>
             <div class="about__description">
                 <p class="about__desc">About</p>
@@ -198,7 +206,12 @@
                 </div>
             <ul class="team__list">
                 <li class="team__item">
-                    <img class="team__image" src="./img/john.jpg" alt="John Smith">
+                    <picture>
+                        <source srcset="./img/desktop/team-desktop-john@1x.webp 1x, ./img/desktop/team-desktop-john@2x.webp 2x" media="(min-width:1200px)">
+                        <source srcset="./img/tablet/team-tablet-john@1x.webp 1x, ./img/tablet/team-tablet-john@2x.webp 2x" media="(min-width:720px)">
+                        <source srcset="./img/mobile/team-mobile-john@1x.webp 1x, ./img/mobile/team-mobile-john@2x.webp 2x" media="(max-width:767px)">
+                        <img class="team__image" src="./img/john.jpg" alt="John Smith">
+                    </picture>
                     <div class="team__description">
                         <h2 class="team__name">John Smith</h2>
                     <p class="team__text">Extreme Barber</p>
@@ -235,7 +248,12 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img class="team__image" src="./img/michele.jpg" alt="Michele Doe">
+                    <picture>
+                        <source srcset="./img/desktop/team-desktop-michele@1x.webp 1x, ./img/desktop/team-desktop-michele@2x.webp 2x" media="(min-width:1200px)">
+                        <source srcset="./img/tablet/team-tablet-michele@1x.webp 1x, ./img/tablet/team-tablet-michele@2x.webp 2x" media="(min-width:720px)">
+                        <source srcset="./img/mobile/team-mobile-michele@1x.webp 1x, ./img/mobile/team-mobile-michele@2x.webp 2x" media="(max-width:767px)">
+                        <img class="team__image" src="./img/michele.jpg" alt="Michele Doe">
+                    </picture>
                     <div class="team__description">
                         <h2 class="team__name">Michele Doe</h2>
                     <p class="team__text">Extreme Barber</p>
@@ -272,7 +290,12 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img class="team__image" src="./img/alan.jpg" alt="Alan Black">
+                    <picture>
+                        <source srcset="./img/desktop/team-desktop-alan@1x.webp 1x, ./img/desktop/team-desktop-alan@2x.webp 2x" media="(min-width:1200px)">
+                        <source srcset="./img/tablet/team-tablet-alan@1x.webp 1x, ./img/tablet/team-tablet-alan@2x.webp 2x" media="(min-width:720px)">
+                        <source srcset="./img/mobile/team-mobile-alan@1x.webp 1x, ./img/mobile/team-mobile-alan@2x.webp 2x" media="(max-width:767px)">
+                        <img class="team__image" src="./img/alan.jpg" alt="Alan Black">
+                    </picture>
                     <div class="team__description">
                         <h2 class="team__name">Alan Black</h2>
                     <p class="team__text">Extreme Barber</p>
@@ -315,10 +338,38 @@
             <div class="container">
                 <p class="gallery__desc">In Latin, "barba" means "beard"</p>
                 <ul class="gallery__list">
-                <li class="gallery__item"><img src="./img/pro-haircut.jpg" alt="pro-haircut" class="gallery__image"></li>
-                <li class="gallery__item"><img src="./img/pro-beard.jpg" alt="pro-beard" class="gallery__image"></li>
-                <li class="gallery__item"><img src="./img/man.jpg" alt="man" class="gallery__image"></li>
-                <li class="gallery__item"><img src="./img/hands.jpg" alt="hands" class="gallery__image"></li>
+                <li class="gallery__item">
+                    <picture>
+                        <source srcset="./img/desktop/gallery-desktop-img1@1x.webp 1x, ./img/desktop/gallery-desktop-img1@2x.webp 2x" media="(min-width:1200px)">
+                        <source srcset="./img/tablet/gallery-tablet-img1@1x.webp 1x, ./img/tablet/gallery-tablet-img1@2x.webp 2x" media="(min-width:720px)">
+                        <source srcset="./img/mobile/gallery-mobile-img1@1x.webp 1x, ./img/mobile/gallery-mobile-img1@2x.webp 2x" media="(max-width:767px)">
+                        <img src="./img/pro-haircut.jpg" alt="pro-haircut" class="gallery__image">
+                    </picture>
+                </li>
+                <li class="gallery__item">
+                    <picture>
+                        <source srcset="./img/desktop/gallery-desktop-img2@1x.webp 1x, ./img/desktop/gallery-desktop-img2@2x.webp 2x" media="(min-width:1200px)">
+                        <source srcset="./img/tablet/gallery-tablet-img2@1x.webp 1x, ./img/tablet/gallery-tablet-img2@2x.webp 2x" media="(min-width:720px)">
+                        <source srcset="./img/mobile/gallery-mobile-img2@1x.webp 1x, ./img/mobile/gallery-mobile-img2@2x.webp 2x" media="(max-width:767px)">
+                        <img src="./img/pro-beard.jpg" alt="pro-beard" class="gallery__image">
+                    </picture>
+                </li>
+                <li class="gallery__item">
+                    <picture>
+                        <source srcset="./img/desktop/gallery-desktop-img3@1x.webp 1x, ./img/desktop/gallery-desktop-img3@2x.webp 2x" media="(min-width:1200px)">
+                        <source srcset="./img/tablet/gallery-tablet-img3@1x.webp 1x, ./img/tablet/gallery-tablet-img3@2x.webp 2x" media="(min-width:720px)">
+                        <source srcset="./img/mobile/gallery-mobile-img3@1x.webp 1x, ./img/mobile/gallery-mobile-img3@2x.webp 2x" media="(max-width:767px)">
+                        <img src="./img/man.jpg" alt="man" class="gallery__image">
+                    </picture>
+                </li>
+                <li class="gallery__item">
+                    <picture>
+                        <source srcset="./img/desktop/gallery-desktop-img4@1x.webp 1x, ./img/desktop/gallery-desktop-img4@2x.webp 2x" media="(min-width:1200px)">
+                        <source srcset="./img/tablet/gallery-tablet-img4@1x.webp 1x, ./img/tablet/gallery-tablet-img4@2x.webp 2x" media="(min-width:720px)">
+                        <source srcset="./img/mobile/gallery-mobile-img4@1x.webp 1x, ./img/mobile/gallery-mobile-img4@2x.webp 2x" media="(max-width:767px)">
+                        <img src="./img/hands.jpg" alt="hands" class="gallery__image">
+                    </picture>
+                </li>
             </ul>
             </div>
         </section>
