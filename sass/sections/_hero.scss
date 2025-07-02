@@ -64,25 +64,37 @@
         url(../img/desktop/hero-desktop-bcg@2x.webp);
     }
   }
-
+&>.container{
+  position: relative;
+}
   &__aside {
     display: none;
     @media screen and (min-width: 720px) {
       display: flex;
       flex-direction: column;
-      width: 90px;
-      height: 680px;
-      background-color: #fff;
+      // width: 90px;
+      height: 710px;
+      background-color: red;
       position: absolute;
-      top: 0;
+      top: -272px;
+      left: -1px;
+      padding-top: 32px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 40px;
     }
   }
 
+  &__icon{
+    width: 68.93px;
+height: 55.46px;
+fill: $logo-color-tablet-desktop;
+  }
   &__items {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: auto;
+    flex-direction: column-reverse;
+    gap: 100px;
+    margin-top: 282px;
   }
 
   &__elem {

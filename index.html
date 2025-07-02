@@ -30,10 +30,10 @@
             <div class="header__box">
                 <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a href="#" class="header__link">About</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Services and prices</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Barbers</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Contacts</a></li>
+                    <li class="header__item"><a href="#about" class="header__link">About</a></li>
+                    <li class="header__item"><a href="#prices" class="header__link">Services and prices</a></li>
+                    <li class="header__item"><a href="#team" class="header__link">Barbers</a></li>
+                    <li class="header__item"><a href="#contacts" class="header__link">Contacts</a></li>
                 </ul>
             </nav>
             <ul class="header__items">
@@ -75,7 +75,7 @@
     <main>
         <section class="hero">
             <div class="container">
-                <!-- <aside class="hero__aside">
+                <aside class="hero__aside">
                 <a class="hero__logo" href="./index.html"><svg class="hero__icon">
                     <use href="./img/symbol-defs.svg#icon-Logo"></use>
                 </svg></a>
@@ -83,7 +83,7 @@
                     <li class="hero__elem"><a href="https://www.instagram.com/" class="hero__social">Instagram</a></li>
                     <li class="hero__elem"><a href="https://www.youtube.com/" class="hero__social">Youtube</a></li>
                 </ul>
-            </aside> -->
+            </aside>
                 <div class="hero__wrap">
                 <div class="hero__box">
                     <p class="hero__desc">A hair salon for men in Kyiv</p>
@@ -98,7 +98,7 @@
             </ul>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container about__wrap">
             <div class="about__images">
                 <picture>
@@ -121,11 +121,11 @@
             </div>
             </div>
         </section>
-         <section class="prices">
+         <section class="prices" id="prices" data-aos="fade-up">
         <div class="container">
             <p class="prices__desc">Spend your time with the best masters</p>
         <h2 class="prices__title">Services and prices</h2>
-        <ul class="prices__list">
+        <ul class="prices__list" data-aos="flip-left">
             <li class="prices__item">
                 <ul class="prices__elements">
                     <li class="prices__elem">
@@ -171,13 +171,13 @@
         <button class="prices__btn button" type="button">online-booking</button>
         </div>
         </section>
-        <section class="features">
+        <section class="features" data-aos="fade-up">
             <div class="container features__boxes">
                 <div class="features__box"><p class="features__desc">Old traditional school</p>
             <h2 class="features__title">¿Why people come to us?</h2>
             <p class="features__subtitle">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p></div>
             <div class="features__stats">
-            <ul class="features__list">
+            <ul class="features__list" data-aos="flip-left">
                 <li class="features__item">
                     <h2 class="features__heading">600<span class="features__plus">+</span></h2>
                     <p class="features__text">Satisfied customers per day</p>
@@ -198,14 +198,14 @@
         </div>
             </div>
         </section>
-        <section class="team">
+        <section class="team" id="team" data-aos="fade-up">
             <div class="container">
                 <div class="team__heading">
                     <p class="team__desc">For true enjoyers of the atmosphere</p>
             <h2 class="team__title">Our barbers</h2>
                 </div>
             <ul class="team__list">
-                <li class="team__item">
+                <li class="team__item" data-aos="flip-left">
                     <picture>
                         <source srcset="./img/desktop/team-desktop-john@1x.webp 1x, ./img/desktop/team-desktop-john@2x.webp 2x" media="(min-width:1200px)">
                         <source srcset="./img/tablet/team-tablet-john@1x.webp 1x, ./img/tablet/team-tablet-john@2x.webp 2x" media="(min-width:720px)">
@@ -247,7 +247,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="team__item">
+                <li class="team__item" data-aos="flip-left">
                     <picture>
                         <source srcset="./img/desktop/team-desktop-michele@1x.webp 1x, ./img/desktop/team-desktop-michele@2x.webp 2x" media="(min-width:1200px)">
                         <source srcset="./img/tablet/team-tablet-michele@1x.webp 1x, ./img/tablet/team-tablet-michele@2x.webp 2x" media="(min-width:720px)">
@@ -289,7 +289,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="team__item">
+                <li class="team__item" data-aos="flip-left">
                     <picture>
                         <source srcset="./img/desktop/team-desktop-alan@1x.webp 1x, ./img/desktop/team-desktop-alan@2x.webp 2x" media="(min-width:1200px)">
                         <source srcset="./img/tablet/team-tablet-alan@1x.webp 1x, ./img/tablet/team-tablet-alan@2x.webp 2x" media="(min-width:720px)">
@@ -334,11 +334,11 @@
             </ul>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" data-aos="fade-up">
             <div class="container">
                 <p class="gallery__desc">In Latin, "barba" means "beard"</p>
                 <ul class="gallery__list">
-                <li class="gallery__item">
+                <li class="gallery__item" data-aos="zoom-in">
                     <picture>
                         <source srcset="./img/desktop/gallery-desktop-img1@1x.webp 1x, ./img/desktop/gallery-desktop-img1@2x.webp 2x" media="(min-width:1200px)">
                         <source srcset="./img/tablet/gallery-tablet-img1@1x.webp 1x, ./img/tablet/gallery-tablet-img1@2x.webp 2x" media="(min-width:720px)">
@@ -346,7 +346,7 @@
                         <img src="./img/pro-haircut.jpg" alt="pro-haircut" class="gallery__image">
                     </picture>
                 </li>
-                <li class="gallery__item">
+                <li class="gallery__item" data-aos="zoom-in">
                     <picture>
                         <source srcset="./img/desktop/gallery-desktop-img2@1x.webp 1x, ./img/desktop/gallery-desktop-img2@2x.webp 2x" media="(min-width:1200px)">
                         <source srcset="./img/tablet/gallery-tablet-img2@1x.webp 1x, ./img/tablet/gallery-tablet-img2@2x.webp 2x" media="(min-width:720px)">
@@ -354,7 +354,7 @@
                         <img src="./img/pro-beard.jpg" alt="pro-beard" class="gallery__image">
                     </picture>
                 </li>
-                <li class="gallery__item">
+                <li class="gallery__item" data-aos="zoom-in">
                     <picture>
                         <source srcset="./img/desktop/gallery-desktop-img3@1x.webp 1x, ./img/desktop/gallery-desktop-img3@2x.webp 2x" media="(min-width:1200px)">
                         <source srcset="./img/tablet/gallery-tablet-img3@1x.webp 1x, ./img/tablet/gallery-tablet-img3@2x.webp 2x" media="(min-width:720px)">
@@ -362,7 +362,7 @@
                         <img src="./img/man.jpg" alt="man" class="gallery__image">
                     </picture>
                 </li>
-                <li class="gallery__item">
+                <li class="gallery__item" data-aos="zoom-in">
                     <picture>
                         <source srcset="./img/desktop/gallery-desktop-img4@1x.webp 1x, ./img/desktop/gallery-desktop-img4@2x.webp 2x" media="(min-width:1200px)">
                         <source srcset="./img/tablet/gallery-tablet-img4@1x.webp 1x, ./img/tablet/gallery-tablet-img4@2x.webp 2x" media="(min-width:720px)">
@@ -374,7 +374,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts" data-aos="fade-up">
         <div class="container">
             <div class="footer__wraps">
                 <div class="footer__wrap">
