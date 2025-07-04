@@ -74,7 +74,7 @@
       flex-direction: column;
       // width: 90px;
       height: 710px;
-      background-color: red;
+      background-color: $aside-bcg;
       position: absolute;
       top: -272px;
       left: -1px;
@@ -93,14 +93,40 @@ fill: $logo-color-tablet-desktop;
   &__items {
     display: flex;
     flex-direction: column-reverse;
-    gap: 100px;
+    align-items: center;
+    gap: 80px;
     margin-top: 282px;
+    &::before {
+        content: "";
+        width: 1px;
+        height: 60px;
+        background: $desc-color2;
+        display: block;
+  }
   }
 
+  &__social{
+    color: $text-color;
+font-family: "Open Sans";
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 2.2px;
+&:hover{
+      color: $hover-color;
+    }
+  }
+  
   &__elem {
     transform: rotate(270deg);
   }
 
+  &__box{
+    @media screen and (min-width: 720px) {
+            margin-left: 240px;
+        }
+  }
   &__wrap {
     display: flex;
     align-items: center;

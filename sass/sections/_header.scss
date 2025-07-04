@@ -6,6 +6,9 @@
   &__box {
     display: flex;
     justify-content: space-between;
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+    }
   }
 
   &__nav {
@@ -13,7 +16,11 @@
 
     @media screen and (min-width: 720px) {
       display: block;
-      
+      margin-left: 150px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: block;
+      margin-left: 255px;
     }
   }
 

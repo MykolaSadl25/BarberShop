@@ -26,7 +26,6 @@ h1, h2, h3, p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid black;
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -65,12 +64,24 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 1200px) {
+  .header__box {
+    align-items: center;
+  }
+}
 .header__nav {
   display: none;
 }
 @media screen and (min-width: 720px) {
   .header__nav {
     display: block;
+    margin-left: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    display: block;
+    margin-left: 255px;
   }
 }
 .header__list {
@@ -351,7 +362,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 710px;
-    background-color: red;
+    background-color: #FFF;
     position: absolute;
     top: -272px;
     left: -1px;
@@ -369,11 +380,36 @@ body {
 .hero__items {
   display: flex;
   flex-direction: column-reverse;
-  gap: 100px;
+  align-items: center;
+  gap: 80px;
   margin-top: 282px;
+}
+.hero__items::before {
+  content: "";
+  width: 1px;
+  height: 60px;
+  background: #303030;
+  display: block;
+}
+.hero__social {
+  color: #303030;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
+.hero__social:hover {
+  color: #FF6C00;
 }
 .hero__elem {
   transform: rotate(270deg);
+}
+@media screen and (min-width: 720px) {
+  .hero__box {
+    margin-left: 240px;
+  }
 }
 .hero__wrap {
   display: flex;
